@@ -1,0 +1,14 @@
+{
+    "required": true,
+    "package": "com.dayssky.zenithplus.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "minVersion": "0.8",
+    "client": [
+        "BossBarPacketMixin",
+        "EntityMixin",
+        "GuiMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

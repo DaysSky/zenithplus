@@ -1,0 +1,15 @@
+{
+    "text.autoconfig.zenithplus.title": "ZenithPlus Config",
+    "text.autoconfig.zenithplus.category.Clear": "Clear",
+    "text.autoconfig.zenithplus.option.clear.gravityBomb": "Gravity Bomb Highlight",
+    "text.autoconfig.zenithplus.option.clear.gravityBomb.enabled": "Enabled",
+    "text.autoconfig.zenithplus.option.clear.gravityBomb.color": "Glow Color",
+    "text.autoconfig.zenithplus.category.Vesp": "Vesp",
+    "text.autoconfig.zenithplus.option.vesperidys.fightTimer": "Vesp Timer",
+    "text.autoconfig.zenithplus.category.Brood": "Brood",
+    "text.autoconfig.zenithplus.option.brood.removeFire": "Remove Weakpoint/Core Fire",
+    "text.autoconfig.zenithplus.option.brood.limbHealthColor": "Health-based glow color for Weakpoints",
+    "text.autoconfig.zenithplus.option.brood.coreHealthColor": "Health-based glow color for Core",
+    "text.autoconfig.zenithplus.option.brood.weakpointTimer": "Weakpoint Timer",
+    "text.autoconfig.zenithplus.category.General": "General"
+}

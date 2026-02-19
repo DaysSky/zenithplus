@@ -1,0 +1,31 @@
+{
+    "schemaVersion": 1,
+    "id": "zenithplus",
+    "version": "${version}",
+    "name": "ZenithPlus",
+    "description": "Zenith Utilities",
+    "authors": [
+        "DaysSky",
+        "claire"
+    ],
+    "license": "BSD-3-Clause",
+    "icon": "assets/zenithplus/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "com.dayssky.zenithplus.ZenithPlusClient"
+        ],
+        "modmenu": [
+            "com.dayssky.zenithplus.config.ZenithPlusModMenu"
+        ]
+    },
+    "mixins": [
+        "zenithplus.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.18.4",
+        "minecraft": "~1.20.4",
+        "java": ">=17",
+        "fabric-api": "*"
+    }
+}
