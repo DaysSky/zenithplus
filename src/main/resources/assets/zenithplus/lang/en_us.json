@@ -10,6 +10,5 @@
     "text.autoconfig.zenithplus.option.brood.removeFire": "Remove Weakpoint/Core Fire",
     "text.autoconfig.zenithplus.option.brood.limbHealthColor": "Health-based glow color for Weakpoints",
     "text.autoconfig.zenithplus.option.brood.coreHealthColor": "Health-based glow color for Core",
-    "text.autoconfig.zenithplus.option.brood.weakpointTimer": "Weakpoint Timer",
-    "text.autoconfig.zenithplus.category.General": "General"
+    "text.autoconfig.zenithplus.option.brood.weakpointTimer": "Weakpoint Timer"
 }

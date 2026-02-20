@@ -10,13 +10,9 @@ import me.shedaniel.autoconfig.annotation.ConfigEntry;
 @Config(name = "zenithplus")
 public class ZenithPlusConfig implements ConfigData {
 
-    @ConfigEntry.Category("General")
+    @ConfigEntry.Category("Clear")
     @ConfigEntry.Gui.Excluded
     public Map<String, HudPosition> hudPositions = new HashMap<>();
-
-    @ConfigEntry.Category("General")
-    @ConfigEntry.Gui.TransitiveObject
-    public General general = new General();
 
     public static class HudPosition {
         public int x;
@@ -44,9 +40,6 @@ public class ZenithPlusConfig implements ConfigData {
     @ConfigEntry.Gui.TransitiveObject
     public Brood brood = new Brood();
 
-    public static class General {
-        public boolean meow = true;
-    }
 
     public static class Clear {
         @ConfigEntry.Gui.CollapsibleObject
