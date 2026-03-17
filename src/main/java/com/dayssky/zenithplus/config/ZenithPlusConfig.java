@@ -62,5 +62,15 @@ public class ZenithPlusConfig implements ConfigData {
 
     public static class Vesperidys {
         public boolean fightTimer = true;
+
+        @ConfigEntry.Gui.CollapsibleObject
+        public TpHighlight tpHighlight = new TpHighlight();
+
+        public static class TpHighlight {
+            public boolean enabled = true;
+            @ConfigEntry.ColorPicker
+            public int color = 0x00FF00;
+            public float size = 4.0F;
+        }
     }
 }
