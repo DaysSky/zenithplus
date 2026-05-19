@@ -6,8 +6,11 @@
     "client": [
         "BossBarPacketMixin",
         "ClientLevelMixin",
+        "DepthsSkillSelectionMixin",
         "EntityMixin",
-        "GuiMixin"
+        "GuiMixin",
+        "ParticlePacketMixin",
+        "SoundPacketMixin"
     ],
     "injectors": {
         "defaultRequire": 1

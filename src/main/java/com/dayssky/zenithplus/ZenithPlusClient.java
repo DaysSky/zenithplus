@@ -3,7 +3,9 @@ package com.dayssky.zenithplus;
 import com.dayssky.zenithplus.boss.BroodHelper;
 import com.dayssky.zenithplus.boss.VesperidysHelper;
 import com.dayssky.zenithplus.config.ZenithPlusConfig;
+import com.dayssky.zenithplus.clear.SidearmHelper;
 import com.dayssky.zenithplus.utils.ChatUtils;
+import com.dayssky.zenithplus.utils.EntityUtils;
 
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
@@ -26,6 +28,7 @@ public class ZenithPlusClient implements ClientModInitializer {
         AutoConfig.register(ZenithPlusConfig.class, GsonConfigSerializer::new);
 
         ChatUtils.register();
+        SidearmHelper.register();
         VesperidysHelper.register();
         BroodHelper.register();
         registerDimensionChangeHandler();
@@ -41,6 +44,7 @@ public class ZenithPlusClient implements ClientModInitializer {
 
             ResourceKey<Level> currentDimension = client.level.dimension();
             if (lastDimension != null && !lastDimension.equals(currentDimension)) {
+                EntityUtils.cleanup();
                 VesperidysHelper.cleanup();
                 BroodHelper.cleanup();
             }
